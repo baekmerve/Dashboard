@@ -15,7 +15,6 @@ export const fetchDeliveryList = createAsyncThunk(
 
     //return response.data.users; // Return the data
     const { data } = response;
-    console.log("🚀 fetchDeliveryList- async - data:", data);
 
     return data;
   }
@@ -24,9 +23,7 @@ export const fetchDeliveryList = createAsyncThunk(
 export const deliverySlice = createSlice({
   name: "delivery",
   initialState,
-  reducers: {
-   
-  },
+  reducers: {},
   extraReducers: (builder) => {
     builder
       .addCase(fetchDeliveryList.pending, (state) => {

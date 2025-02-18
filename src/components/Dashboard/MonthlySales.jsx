@@ -15,9 +15,9 @@ import { BadgeDollarSign } from "lucide-react";
 
 const MonthlySales = () => {
   return (
-    <Card className="col-span-12 md:col-span-7  rounded-xl hover:scale-105 shadow-xl my-5 overflow-hidden  h-[300px]">
+    <Card className="col-span-12 md:col-span-7 rounded-xl shadow-xl my-5 overflow-hidden h-[300px] ">
       <CardHeader className="p-4">
-        <CardTitle className="flex items-center gap-1.5 font-medium">
+        <CardTitle className="flex items-center gap-2 font-medium">
           <BadgeDollarSign /> Monthly Sales
         </CardTitle>
       </CardHeader>

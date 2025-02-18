@@ -3,24 +3,62 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="TheBoard - Your go-to platform for admin panel"
+    />
+    <meta name="author" content="Merve Baek" />
+    <meta property="og:title" content="THEBOARD" />
+        <meta property="og:description" c content="TheBoard - Your go-to platform for admin panel" />
+    <meta property="og:url" content="https://dashboard-wheat-alpha.vercel.app/" />
 
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <!-- <link href="/dist/styles.css" rel="stylesheet" /> -->
+ <!-- Favicon and icons -->
+    <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="/icons/apple-touch-icon.png" />
+    <link rel="icon" href="/icons/favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" href="/icons/favicon-16x16.png" sizes="16x16" />
+
+  <!-- Google Fonts -->
     <link
       href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
       rel="stylesheet"
     />
+     <!-- Preload font for faster rendering -->
+        <link
+      rel="preload"
+      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+      as="style"
+    />
+    
+    <!-- Title -->
+    <title>THEBOARD</title>
 
-    <style>
+    <!-- Additional Styles  -->
+
+   <style>
+      /* Global Reset */
       * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+        body {
         font-family: "Nunito", sans-serif;
+        background-color: #f5f5f5;
+        color: #333;
+        margin: 0;
+        padding: 0;
+      }
+          #root {
+        min-height: 100vh;
       }
     </style>
-
-    <title>THEBOARD</title>
   </head>
   <body>
     <div id="root"></div>
+        <!-- Async script loading for better performance -->
+
     <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>

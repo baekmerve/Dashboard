@@ -13,7 +13,7 @@ import { activityData } from "@/assets/data/mockData";
 
 const UserActivity = () => {
   return (
-    <Card className="col-span-12 md:col-span-7  rounded-xl hover:scale-105 shadow-xl my-5 hover:mx-4 overflow-hidden h-[300px] ">
+     <Card className="col-span-12 md:col-span-7 rounded-xl shadow-xl my-5 overflow-hidden h-[300px] ">
       <CardHeader className="p-4">
         <CardTitle className="flex items-center gap-2 font-medium">
           <User /> User Activity

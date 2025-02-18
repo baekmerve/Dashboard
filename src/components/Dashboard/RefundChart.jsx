@@ -1,5 +1,5 @@
-import { refundData } from '@/assets/data/mockData';
-import React from 'react'
+import { refundData } from "@/assets/data/mockData";
+import React from "react";
 import {
   Radar,
   RadarChart,
@@ -9,12 +9,11 @@ import {
   ResponsiveContainer,
 } from "recharts";
 import { Card, CardContent, CardHeader, CardTitle } from "../ui/card";
-import { TicketX } from 'lucide-react';
-
+import { TicketX } from "lucide-react";
 
 const RefundChart = () => {
   return (
-    <Card className="col-span-12 md:col-span-5  rounded-xl hover:scale-105 shadow-xl my-5 hover:mx-4 overflow-hidden h-[300px] ">
+    <Card className="col-span-12 md:col-span-5  rounded-xl shadow-xl my-5 overflow-hidden h-[300px] ">
       <CardHeader className="p-4">
         <CardTitle className="flex items-center gap-2 font-medium">
           <TicketX /> Refund Reasons
@@ -27,7 +26,7 @@ const RefundChart = () => {
             <PolarAngleAxis dataKey="subject" />
             <PolarRadiusAxis />
             <Radar
-              name="Mike"
+              name="Refund"
               dataKey="A"
               stroke="#8884d8"
               fill="#8884d8"
@@ -38,6 +37,6 @@ const RefundChart = () => {
       </CardContent>
     </Card>
   );
-}
+};
 
-export default RefundChart
+export default RefundChart;

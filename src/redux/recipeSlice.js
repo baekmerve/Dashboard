@@ -1,11 +1,9 @@
 import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
 import axios from "axios";
 
-
 const initialState = {
-
-  recipeList:[],
-  recipe:"",
+  recipeList: [],
+  recipe: "",
   loading: false,
   error: null,
 };
@@ -16,7 +14,6 @@ export const fetchRecipes = createAsyncThunk(
   async () => {
     const response = await axios.get("https://dummyjson.com/recipes?limit=0");
     const { data } = response;
-    console.log("🚀 fetchRecipes- async - data:", data);
 
     return data.recipes;
   }
@@ -31,7 +28,6 @@ export const fetchSingleRecipe = createAsyncThunk(
       `https://dummyjson.com/recipes/${recipeId}`
     );
     const { data } = response;
-    console.log("🚀 fetchSingleRecipe- data:", data);
 
     return data;
   }
@@ -39,9 +35,7 @@ export const fetchSingleRecipe = createAsyncThunk(
 export const recipeSlice = createSlice({
   name: "recipe",
   initialState,
-  reducers: {
-    
-  },
+  reducers: {},
   extraReducers: (builder) => {
     builder
       .addCase(fetchRecipes.pending, (state) => {
@@ -69,7 +63,6 @@ export const recipeSlice = createSlice({
   },
 });
 
-export const {  } = recipeSlice.actions;
+export const {} = recipeSlice.actions;
 
 export default recipeSlice.reducer;
-

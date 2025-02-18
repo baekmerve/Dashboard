@@ -16,7 +16,6 @@ export const fetchUsers = createAsyncThunk(
 
     //return response.data.users; // Return the data
     const { data } = response;
-    console.log("🚀 fetchUsers- async - data:", data);
 
     return data.users;
   }
@@ -29,7 +28,6 @@ export const fetchSingleUser = createAsyncThunk(
   async (userId) => {
     const response = await axios.get(`https://dummyjson.com/users/${userId}`);
     const { data } = response;
-    console.log("🚀 fetchSingleUser- data:", data);
 
     return data;
   }

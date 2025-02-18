@@ -16,7 +16,7 @@ export const fetchProducts = createAsyncThunk(
   async () => {
     const response = await axios.get("https://dummyjson.com/products?limit=0");
     const { data } = response;
-    console.log("🚀 fetchProducts- async - data:", data);
+
 
     return data.products;
   }
@@ -31,7 +31,7 @@ export const fetchSingleProduct = createAsyncThunk(
       `https://dummyjson.com/products/${productId}`
     );
     const { data } = response;
-    console.log("🚀 fetchSingProduct- data:", data);
+
 
     return data;
   }

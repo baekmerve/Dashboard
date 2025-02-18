@@ -94,9 +94,9 @@ const SalesbyCountry = () => {
     setActiveIndex(index);
   };
   return (
-    <Card className="col-span-12 md:col-span-5 rounded-xl hover:scale-105 shadow-xl overflow-hidden my-5 ml-2 h-[300px]">
+  <Card className="col-span-12 md:col-span-5 rounded-xl shadow-xl my-5 hover:mx-4 overflow-hidden h-[300px] ">
       <CardHeader className="p-4 overflow-visible">
-        <CardTitle className="flex items-center gap-1.5 font-medium">
+        <CardTitle className="flex items-center gap-2 font-medium">
           <BadgeDollarSign /> Sales by Country
         </CardTitle>
       </CardHeader>
