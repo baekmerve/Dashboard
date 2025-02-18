@@ -50,8 +50,8 @@ const MonthlySales = () => {
             />
             <Legend wrapperStyle={{ marginTop: 10 }} />
 
-            <Bar dataKey="expenses" stackId="a" fill="#8884d8" />
-            <Bar dataKey="profit" stackId="a" fill="#82ca9d" />
+            <Bar dataKey="expenses" stackId="a" fill="#92a8d1" />
+            <Bar dataKey="profit" stackId="a" fill="#88d8b0" />
           </BarChart>
         </ResponsiveContainer>
       </CardContent>

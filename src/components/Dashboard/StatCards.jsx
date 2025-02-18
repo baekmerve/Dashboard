@@ -2,13 +2,10 @@ import {
   ArrowUpRight,
   DollarSign,
   Package,
-  ShoppingCart,
   TicketX,
   TrendingDown,
   TrendingUp,
-  User2Icon,
   UserPlus,
-  Wallet,
 } from "lucide-react";
 import React from "react";
 import { Link } from "react-router-dom";
@@ -16,7 +13,6 @@ import { Card, CardContent, CardHeader, CardTitle } from "../ui/card";
 
 const Widget = ({
   title,
-  isMoney,
   link,
   icon,
   value,
@@ -25,7 +21,7 @@ const Widget = ({
   linkAddress,
 }) => {
   return (
-    <Card className="col-span-12 md:col-span-6 lg:col-span-3  rounded-2xl shadow-xl hover:scale-105 m-2 my-4 ">
+    <Card className="col-span-12 md:col-span-6 lg:col-span-3  rounded-2xl shadow-lg hover:scale-105 m-2 my-4 hover:shadow-[#9ff7d6]">
       <CardHeader className="flex-row justify-between ">
         <CardTitle className="flex w-full justify-between ">
           <h1 className="text-xl">{title}</h1>

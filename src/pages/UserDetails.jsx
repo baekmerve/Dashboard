@@ -1,4 +1,3 @@
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { fetchSingleUser } from "@/redux/userSlice";
 import { DotLottieReact } from "@lottiefiles/dotlottie-react";
 import React, { useEffect } from "react";
